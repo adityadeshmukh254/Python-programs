@@ -1,0 +1,24 @@
+class Student:
+    name='a'
+    rollno=0
+    marks=0
+    def __init__(self,name1,rollno1,marks1):
+        self.name =name1
+        self.rollno=rollno1
+        self.marks =marks1
+    def printValues(self):
+        print("name = ",self.name)
+        print("rollno = ",self.rollno)
+        print("grade = ",self.marks)
+        if(self.marks>=90):
+            print("grade = A")
+        elif(self.marks>=75 and self.marks<90):
+            print("grade = B")
+        elif(self.marks>=50 and self.marks<75):
+            print("grade = C")
+        elif(self.marks<50 and self.marks>=33):
+            print("grade = D")
+        else:
+            print("grade = F")
+stu=Student('Aditya',111,90)
+stu.printValues()
